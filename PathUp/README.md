@@ -6,7 +6,6 @@ PathUp is an update path extracting module from (https://github.com/WUSTL-CSPL/C
 - java 11.0.23
 - npm 6.14.4
 - python packages ([requirements.txt](./requirements.txt))
-- ghidra 10.1.2 (https://github.com/NationalSecurityAgency/ghidra/releases)
 
 ## Usage
 1. Setup the testing environment;
