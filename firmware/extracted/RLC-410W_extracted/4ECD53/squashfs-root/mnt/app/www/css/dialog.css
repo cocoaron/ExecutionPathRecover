@@ -1,0 +1,54 @@
+.bc-dialog-bg {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 998;
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+  .bc-dialog-bg .bc-dialog {
+    border: 3px solid #282a2a;
+    position: fixed;
+    display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;
+    -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column;
+    background: #fafafa;
+    padding: 0;
+    margin: 0; }
+    .bc-dialog-bg .bc-dialog .bc-dialog-title {
+      background: #282a2a;
+      color: white;
+      display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex; }
+      .bc-dialog-bg .bc-dialog .bc-dialog-title .bc-dialog-title-text {
+        -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;
+        padding: 8px; }
+      .bc-dialog-bg .bc-dialog .bc-dialog-title .bc-dialog-close {
+        background: url(../img/icon-close-white.png);
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        cursor: pointer; }
+    .bc-dialog-bg .bc-dialog .bc-dialog-vessel {
+      -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;
+      display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;
+      -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column;
+      color: #333; }
+
+#snap-dialog .bc-dialog {
+  height: 600px;
+  width: 800px;
+  background: #000; }
+#snap-dialog .bc-dialog-vessel {
+  text-align: center; }
+#snap-dialog img {
+  max-width: 100%;
+  max-height: 100%; }
+#snap-dialog.fullscreen .bc-dialog {
+  width: 99%;
+  height: 99%;
+  border-color: white; }
+#snap-dialog.fullscreen .bc-dialog-title {
+  background-color: white;
+  color: #333; }
+#snap-dialog.fullscreen .bc-dialog-close {
+  background: url(../img/icon-close-black.png); }

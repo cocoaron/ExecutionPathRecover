@@ -1,0 +1,35 @@
+#!/bin/sh
+# System Daemon Run
+echo "nvtapp" > /proc/nvt_info/bootts
+
+# for ISP tool
+#echo "run msdcnvt"
+
+#nvtipcd 1 \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_imx291.cfg fps=2500 &
+
+# for ISP pseudo driver
+echo "insert nvt_isp510"
+SENSOR=$(get_sysinfo |grep -m 1 Sensor)
+SENSOR=${SENSOR##* }
+if [ "${SENSOR}" == "CMOS_SC5035M" ];then
+        nvtipcd  \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_sc5035_day.cfg fps=0 &
+elif [ "${SENSOR}" == "CMOS_OV4689M" ];then
+        nvtipcd  \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_ov4689_day.cfg fps=0 &
+elif [ "${SENSOR}" == "CMOS_OS05A10M" ];then
+        nvtipcd  \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_os05a10_day.cfg fps=0 &
+elif [ "${SENSOR}" == "CMOS_SC5236M" ];then
+        nvtipcd  \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_sc5236_day.cfg fps=0 &
+else
+        nvtipcd  \/lib/modules/4.1.0/extra/misc/nvt_isp/nvt_isp510.ko cfg_path=/usr/isp510_ov4689_day.cfg fps=0 &
+fi
+
+nvteventd &
+#crond
+#nvtsystem -s
+#nvtrecordManagerd &
+
+# init tunning tool
+uctrl usys -msdcnvt 1
+
+#DeviceDiscovery -d &
+echo "nvtapp" > /proc/nvt_info/bootts

@@ -1,0 +1,17 @@
+/
+/lib/
+/lib/modules/
+/lib/modules/2.6.15/
+/lib/modules/2.6.15/asf.ko
+/lib/modules/2.6.15/wlan_ext.ko
+/lib/modules/2.6.15/umac.ko
+/lib/modules/2.6.15/ath_hal.ko
+/lib/modules/2.6.15/ath_rate_atheros.ko
+/lib/modules/2.6.15/ath_dev.ko
+/lib/modules/2.6.15/adf.ko
+/etc/
+/etc/init.d/
+/sbin/
+/sbin/cgiMain
+/sbin/wlanconfig
+/sbin/cfg

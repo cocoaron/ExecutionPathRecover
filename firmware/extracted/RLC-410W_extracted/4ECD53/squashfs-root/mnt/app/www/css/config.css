@@ -1,0 +1,22 @@
+/**
+ * This file configures the UI of remote config view
+ */
+
+#view-remote-config {
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: white;
+	z-index: 500px;
+}
+
+#view-remote-config.visible {
+	visibility: visible;
+}
+
+#view-remote-config .tips {
+    display: none;
+}

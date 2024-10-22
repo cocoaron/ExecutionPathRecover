@@ -1,0 +1,72 @@
+[ -f /etc/sysctl.conf ] && sysctl -p -e >&-
+sh /etc/init.d/sd_mount.sh
+
+echo 0 > /proc/sys/vm/extra_free_kbytes
+echo 1999 > /proc/sys/vm/dirty_expire_centisecs
+echo 0 > /proc/sys/vm/dirty_writeback_centisecs
+echo 2 > /proc/sys/vm/dirty_ratio
+echo 2 > /proc/sys/vm/dirty_background_ratio
+echo 1500 > /proc/sys/vm/min_free_kbytes
+echo 10 > /proc/sys/vm/extfrag_threshold
+echo 1 > /proc/sys/vm/overcommit_memory
+echo 1 > /proc/sys/vm/panic_on_oom
+
+##wifiÉÏµç
+echo 40 >  /sys/class/gpio/export
+echo out >  /sys/class/gpio/gpio40/direction
+echo 1 > /sys/class/gpio/gpio40/value
+
+mount -t jffs2 /dev/mtdblock7 /mnt/para/
+mount -t tmpfs -o size=20m  tmpfs /mnt/tmp/
+
+
+##sensor_type file
+get_sysinfo | grep [Environment] | grep "Sensor     :" > /mnt/tmp/sensor_type
+ifconfig lo 127.0.0.1
+ifconfig eth0 up
+my_ip=$(/mnt/app/random_ip 192.168)
+ifconfig eth0 ${my_ip} netmask 255.255.0.0
+ifconfig ra0 up
+
+
+cd /mnt/app
+#if [ -f watchdog_monitor_start ];then
+#        ./watchdog_monitor_start &
+#fi
+
+cd /mnt/gm_cfg
+./vg_boot.sh
+
+export PATH="/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/bin:/sbin"
+export LD_LIBRARY_PATH="/lib:/usr/local/lib:/usr/lib:/mnt/app"
+
+cd /mnt/app
+./router &
+./device &
+./recorder &
+./alarmcenter &
+./netserver &
+./upgrade &
+./cloud &
+./push &
+./factory &
+./rtsp &
+./ftp &
+./onvif &
+./netclient &
+
+if [ -f "/mnt/app/ftytest" ];then
+./ftytest &
+fi
+
+if [ -f "/bin/nginx" ]; then
+	/bin/spawn-fcgi -a 127.0.0.1 -p 9527 -f /mnt/app/cgiserver.cgi
+	echo "run cgiserver ok"
+fi
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+START=26
+
+start() {
+	# start wlanlog
+	/usr/bin/wlanlog
+}
+
+stop() {
+	killall /usr/bin/wlanlog
+}
+
+restart() {
+	stop
+	start
+}

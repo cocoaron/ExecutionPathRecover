@@ -1,0 +1,21 @@
+device_node_create()
+{
+	if [ ! -e /dev/$1 ]; then mknod /dev/$1 c `cat /sys/class/$1/$1/dev | sed "s/:/\ /g"`; fi
+}
+
+cd /mnt/app
+if [ -f watchdog_monitor_start ];then
+        ./watchdog_monitor_start &
+fi
+cd -
+
+modprobe nvt_uctrl
+device_node_create nvt_uctrl
+
+mkdir /var/run/lock
+
+#telnetd purpose
+mknod -m 666 /dev/ptmx c 5 2
+mkdir /dev/pts
+mount -t devpts devpts /dev/pts
+

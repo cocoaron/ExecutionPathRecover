@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Copyright (C) 2006 OpenWrt.org
+echo "called with DEVPATH=$DEVPATH, INTERFACE=$INTERFACE"
+case "$ACTION" in
+	add)
+		[ -n "${INTERFACE}" ] &&
+		[ "$(expr substr ${INTERFACE} 1 2)" == "8/" ]  && {
+			/sbin/usb-storage &
+		}
+		;;
+	remove)
+		ls /sys$DEVPATH
+		[ -n "${INTERFACE}" ] &&
+		[ "$(expr substr ${INTERFACE} 1 2)" == "8/" ]  && {
+			/sbin/usb-storage.remove &
+		}
+		;;
+esac	
+		

@@ -1,0 +1,2 @@
+KERNEL=="mmcblk[0-9]",SUBSYSTEM=="block", DRIVERS=="mmcblk", SYMLINK="hd/sda%s"
+ACTION=="add", KERNEL=="mmcblk[0-9]p[0-9]",SUBSYSTEM=="block", DRIVERS=="mmcblk", SYMLINK="hd/sda%n"

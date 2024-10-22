@@ -1,0 +1,13 @@
+/
+/etc/
+/etc/config/
+/etc/config/wireless
+/etc/hotplug.d/
+/etc/hotplug.d/wps/
+/etc/hotplug.d/wps/00-wps
+/etc/hotplug.d/wps/01-wps-led
+/etc/init.d/
+/etc/init.d/wlan-common
+/sbin/
+/sbin/wpsled
+/sbin/wlan

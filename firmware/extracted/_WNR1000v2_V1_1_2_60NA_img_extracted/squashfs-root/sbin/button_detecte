@@ -1,0 +1,53 @@
+#!/bin/sh
+
+dir="/proc/simple_config/"
+pushbutton_n=${dir}"push_button_s"
+resetbutton_n=${dir}"reset_button_s"
+wlanswitch_n=${dir}"wlan_switch_s"
+pushbutton_s=1
+resetbutton_s=1
+wlanswitch_s=1
+
+#initialization button states
+echo 1 > ${pushbutton_n}
+echo 1 > ${resetbutton_n}
+echo 1 > ${wlanswitch_n}
+
+while [ 1 ]
+do
+	#get all buttons states
+	pushbutton_s=`cat ${pushbutton_n}`
+	resetbutton_s=`cat ${resetbutton_n}`
+	wlanswitch_s=`cat ${wlanswitch_n}`
+
+	if [[ 0 -eq ${pushbutton_s} ]]; then
+		if [[ `config get endis_wl_radio` = "1" -a `config get endis_wl_wps` = "0" ]]; then
+			echo 2 > /proc/simple_config/simple_config_err_led
+			# Due to simple_config_err_led will blink last about 5s.
+			# If the wireless security type is 802.1X, light the wps led again 6s later.
+			if [ `config get wl_sectype` = "6" ]; then
+				sleep 6 && echo 2 > /proc/simple_config/simple_config_led &
+			fi
+		elif [ `config get endis_wl_radio` != "0" ]; then
+			wlan wps --pbc_start
+			echo "start" > /tmp/wps_process_state
+		fi
+		echo 1 > ${pushbutton_n}
+	fi
+
+	if [[ 0 -eq ${resetbutton_s} ]]; then
+		/bin/config default
+		/sbin/reboot
+		echo 1 > ${resetbutton_n}
+	elif [[ 2 -eq ${resetbutton_s} ]]; then
+		/sbin/reboot
+		echo 1 > ${resetbutton_n}
+	fi
+
+	if [[ 0 -eq ${wlanswitch_s} ]]; then
+		wlan toggle
+		echo 1 > ${wlanswitch_n}
+	fi
+
+	/bin/sleep 1
+done

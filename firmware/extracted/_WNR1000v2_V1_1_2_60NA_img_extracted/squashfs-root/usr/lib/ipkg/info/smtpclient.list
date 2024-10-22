@@ -1,0 +1,10 @@
+/
+/usr/
+/usr/sbin/
+/usr/sbin/smtpclient
+/etc/
+/etc/email/
+/etc/email/email_log
+/etc/email/send_email_alert
+/etc/email/email_full_log
+/etc/email/send_log

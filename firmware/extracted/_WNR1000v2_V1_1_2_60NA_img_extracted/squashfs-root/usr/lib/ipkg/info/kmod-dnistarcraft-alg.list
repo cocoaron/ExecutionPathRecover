@@ -1,0 +1,8 @@
+/
+/lib/
+/lib/modules/
+/lib/modules/2.6.15/
+/lib/modules/2.6.15/ip_nat_STARCRAFT.ko
+/etc/
+/etc/modules.d/
+/etc/modules.d/20-dnistarcraft-alg

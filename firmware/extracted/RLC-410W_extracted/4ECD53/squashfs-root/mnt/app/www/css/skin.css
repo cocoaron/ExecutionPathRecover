@@ -1,0 +1,157 @@
+@charset "utf-8";
+html,body{
+    background:#000000;
+    color:#fff;
+}
+
+table{ word-break: break-word; }
+
+table span{ word-break: break-word; }
+
+a{
+    color:#fff;
+}
+
+.ab-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_blueBG{
+    background: linear-gradient(180deg,rgba(34,34,34,1) 0%,rgba(0,0,0,1) 100%);;
+}
+
+.preLeft_menu_box{
+    width:238px;
+    background-image: linear-gradient(to bottom, #e5e5e5 0%, #e5e5e5 50%, #e5e5e5 100%);
+}
+
+.pb_menu_box{
+    width:238px;
+    background-image: linear-gradient(to bottom, #e5e5e5 0%, #e5e5e5 50%, #e5e5e5 100%);
+}
+
+.popover, .White_Area{
+    background-image:url(../img/white_popoverBG.png);
+    background-repeat:repeat-x;}
+.loginLogo{
+        background-image:url(../img/logo.png);
+        background-repeat: no-repeat;
+}
+.Lcontainer_header, .Scontainer_header{
+    background-image:url(../img/DINText.png);
+    background-repeat:no-repeat;}
+        
+        
+.right_box_cat_top, .right_box_cat_bottom, .CH_btn-primary, .Blue_btn, Blue_btn-default, .popover_footer, .tab-slice01, .cetvel{
+    background-image:url(../img/allbg.png);
+    background-repeat:repeat-x;
+}
+
+.ptz_adj_btn, .ptz_irisLess, .ptz_irisMore, .ptz_zoomLess, .ptz_zoomMore, .ptz_focusLess, .ptz_focusMore, .btn_image_span, .fleft_btn_play, .fleft_btn_stop, .fleft_btn_playnext, .fleft_btn_play02, .fleft_btn_pause, .fleft_btn_stop02, .fleft_btn_playnext02, .fleft_btn_snap, .fleft_btn_video, .fleft_btn_back, .fleft_btn_next, .fleft_btn_1s, .fleft_btn_4s, .fleft_btn_9s, .fleft_btn_16s, .iconName, .iconPass, .iconMedia, .iconLang,.icheckbox_square-blue, .iradio_square-blue, .iconDownload, .span_check, .iconRecord, .iconPath, .iconCapture, .iconAvi, .navico01, .navico02, .navico03, .volicon01, .volicon02, .volicon03, .volicon04, .pagimg01, .pagimg02, .fleft_btn_cut, .fleft_btn_save, .btn_ex-col_01, .btn_ex-col_02{
+        background-image:url(../img/icons.png);
+        background-repeat: no-repeat !important;
+}
+
+.slider_icon_light, .slider_icon_contrast, .slider_icon_saturation, .slider_icon_hue{
+    
+    background-image:url(../img/configure.png);
+}
+
+.pre_ptz_up_left, .pre_ptz_control_decrease, .pre_ptz_control_increase, .pre_ptz_control_zoom, .pre_ptz_control_iris, .pre_ptz_control_focus, .pre_ptz_down, .pre_ptz_down_right, .pre_ptz_down_left, .pre_ptz_left, .pre_ptz_up_right, .pre_ptz_up, .pre_ptz_right, .pre_ptz_scan{
+
+    background-image:url(../img/preview_ptz.png);
+}
+
+.loginLeft, .loginRight{
+        background-image:url(../img/bg-Login.png);
+        background-repeat:repeat-x;
+}
+.loginContent{
+    background-image:url(../img/bg-login-big.png);
+    background-repeat:no-repeat;}
+    
+.cam_01{    background-image:url(../img/cam01.jpg);}
+.cam_02{    background-image:url(../img/cam02.jpg);}
+.cam_03{    background-image:url(../img/cam03.jpg);}
+.cam_04{    background-image:url(../img/cam04.jpg);}
+.CPU{       background-image:url(../img/cpu.png); background-repeat:no-repeat;}
+
+.fix{*zoom:1;}
+.fix:after{display:table; content:''; clear:both;}
+.mt15{ margin-top: 15px; }
+.tid{ text-indent: 30px; }
+
+.playAllStream{ position: relative; float: left;}
+
+.dropdown-select-mod{
+    display: none;
+    position: absolute;
+    top: -255px;
+    left: -4px;
+    z-index: 99;
+}
+
+.playAllStream:hover .dropdown-select-mod{
+    display: block;
+}
+
+.dropdown-select-content a{
+    cursor: pointer;
+    color: #3cbffc;
+    text-decoration: underline;
+}
+
+.dropdown-select-content a:hover{
+    color: #1978fa;
+}
+
+
+.dropdown-select-content a.selected{
+    color: #1978fa;
+    font-weight: bolder;
+}
+
+.dropdown-select-content a.disabled,
+.dropdown-select-content a.disabled:hover {
+    color: #ddd !important;
+    cursor: not-allowed;
+}
+
+#preview_button_start[aria-describedby] + .dropdown-select-mod{
+    display: none;
+}
+
+.dropdown-select-content{
+    border: 3px solid rgba(60,186,252,0.9);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    width: 320px;
+    color: #000;
+    line-height: 18px;
+}
+
+.dropdown-select-arrow{
+    border: 16px solid;
+    border-color: rgba(60,186,252,1) transparent transparent  transparent;
+    border-style: normal;
+    width: 0;
+    position: absolute;
+    left: 12px;
+}
+
+.dropdown-select-arrow-top{
+    border: 16px solid;
+    border-color: #fff transparent transparent  transparent;
+    border-style: normal;
+    width: 0;
+    position: absolute;
+    left: 12px;
+    bottom: -27px;
+}
+
+

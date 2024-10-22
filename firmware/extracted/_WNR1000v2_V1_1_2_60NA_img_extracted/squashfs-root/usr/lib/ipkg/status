@@ -1,0 +1,357 @@
+Package: artmtd
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: atheros-aquila-madwifi-11n-scripts
+Status: install ok installed
+Root: /
+Version: 0-1
+
+Package: atheros-aquila-wpa2
+Status: install ok installed
+Root: /
+Version: 0.5.9-1
+
+Package: base-files-wnr1000v2-2.6
+Status: install ok installed
+Root: /
+Conffiles: /etc/banner ba43416ec88a59ede8b5cbccb94e88ef /etc/inittab 3e76614b452d2fe7b66573a8970ec3c0 /etc/group 31c4c2ea7b79761476954e66f9d4ed19 /etc/passwd 4160554a2386454f331d3ef7124f2281 /etc/profile 6133dc730c0124602ed99b08abca653b /etc/shells 725ba6f40dff0612f61ecd3f171bb3e1 /etc/ipkg.conf 8eabfb07b8fa4bd9da8676ffc57941af /etc/sysctl.conf 69b57b359d03eb8aa38c60715adc6b07 /etc/config/network b791e9d40080755d3da0bcbeaa1a53b1 /etc/config/system 1fd8bbe3f2154f544f8be688bec32ebe
+Version: 10-0
+
+Package: libgcc
+Status: install ok installed
+Root: /
+Version: 3.4.4-10
+
+Package: libstdcpp
+Status: install ok installed
+Root: /
+Version: 3.4.4-10
+
+Package: libpthread
+Status: install ok installed
+Root: /
+Version: 0.9.28-10
+
+Package: uclibc
+Status: install ok installed
+Root: /
+Version: 0.9.28-10
+
+Package: bridge
+Status: install ok installed
+Root: /
+Version: 1.0.6-1
+
+Package: busybox
+Status: install ok installed
+Root: /
+Version: 1.4.2-2
+
+Package: datalib
+Status: install ok installed
+Root: /
+Version: 1.0-1
+
+Package: detcable
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: detwan
+Status: install ok installed
+Root: /
+Version: 1.0-1
+
+Package: dni-ripd
+Status: install ok installed
+Root: /
+Version: 0.01-1
+
+Package: dns-ipupdate
+Status: install ok installed
+Root: /
+Version: 2
+
+Package: dnsmasq
+Status: install ok installed
+Root: /
+Conffiles: /etc/dnsmasq.conf 221b4e7cd208ff9bd9ef5378c0814819
+Version: 2.39-1
+
+Package: ebtables
+Status: install ok installed
+Root: /
+Version: 2.0.8-rc2-2
+
+Package: ez-ipupdate
+Status: install ok installed
+Root: /
+Version: 3.0.10-1
+
+Package: fetchPIN
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: igmpproxy
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: iputils-traceroute6
+Status: install ok installed
+Root: /
+Version: 20071127-1
+
+Package: kmod-ag7240-enet
+Status: install ok installed
+Root: /
+Version: 2.6.15+-wnr1000v2-
+
+Package: kmod-ar7240-gpio
+Status: install ok installed
+Root: /
+Version: 2.6.15+-wnr1000v2-
+
+Package: kmod-atheros-aquila-madwifi
+Status: install ok installed
+Root: /
+Version: 2.6.15+-wnr1000v2-1
+
+Package: kmod-conenat
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-dnih323-alg
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-dnirtsp
+Status: install ok installed
+Root: /
+Version: 2.6.15+-wnr1000v2-
+
+Package: kmod-dnisip
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-dnistarcraft-alg
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-dnshijack
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-ftp-alg
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-ipsec-alg
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kernel
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-ppp
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-pppoe
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-ipv6-cone
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-netgear-reject
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-pptp
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-pptp-alg
+Status: install ok installed
+Root: /
+Version: 2.6.15-1
+
+Package: kmod-spiadvdos
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-spidos
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-trigger
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: kmod-urlblock
+Status: install ok installed
+Root: /
+Version: 2.6.15-wnr1000v2-1
+
+Package: led-control
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: lltd
+Status: install ok installed
+Root: /
+Version: 0.1-1
+
+Package: miniupnpd
+Status: install ok installed
+Root: /
+Version: 20070127-3
+
+Package: mtd
+Status: install ok installed
+Root: /
+Version: 5
+
+Package: net-dump
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: net-scan
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: net-util
+Status: install ok installed
+Root: /
+Version: 1-1
+
+Package: net-wall
+Status: install ok installed
+Root: /
+Version: 2
+
+Package: net-web
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: net6conf
+Status: install ok installed
+Root: /
+Version: 0.2-1
+
+Package: ntpclient
+Status: install ok installed
+Root: /
+Version: 4
+
+Package: pot
+Status: install ok installed
+Root: /
+Version: 4
+
+Package: ppp
+Status: install ok installed
+Root: /
+Version: 2.4.3-8
+
+Package: ppp-mod-pppoe
+Status: install ok installed
+Root: /
+Version: 2.4.3-8
+
+Package: ppp-mod-pptp
+Status: install ok installed
+Root: /
+Version: 2.4.3-8
+
+Package: radvd
+Status: install ok installed
+Root: /
+Version: 1.5-1
+
+Package: smtpclient
+Status: install ok installed
+Root: /
+Version: 1.0.0-1
+
+Package: telnetenable
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: trafficmeter
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: udhcp
+Status: install ok installed
+Root: /
+Version: 0.9.8-3
+
+Package: utelnetd
+Status: install ok installed
+Root: /
+Version: 0.1.9-1
+
+Package: wide-dhcpv6-client
+Status: install ok installed
+Root: /
+Version: 20080615-2
+
+Package: wide-dhcpv6-server
+Status: install ok installed
+Root: /
+Version: 20080615-2
+
+Package: wide-dhcpv6-control
+Status: install ok installed
+Root: /
+Version: 20080615-2
+
+Package: wireless-tools
+Status: install ok installed
+Root: /
+Version: 29-1
+
+Package: wlan-common
+Status: install ok installed
+Root: /
+Version: 2.5-1
+
+Package: wlanlog
+Status: install ok installed
+Root: /
+Version: 1
+
+Package: zebra
+Status: install ok installed
+Root: /
+Version: 0.95a-1
+

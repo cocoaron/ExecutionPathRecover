@@ -1,0 +1,246 @@
+.view-block {
+    position: absolute;
+    border: 2px solid transparent;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    z-index: 99;
+    transition: border 250ms ease-in-out;
+}
+
+.fplayer {
+    z-index: 499;
+}
+
+.fplayer-mask {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.view-block.selected {
+    border: 2px solid rgb(0, 109, 204);
+}
+
+.view-toolbar {
+    background-color: #4F4F4F;
+    color: white;
+    height: 27px;
+    font-size: 14px;
+    display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;
+}
+
+.view-title {
+    -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;
+    padding: 5px;
+}
+
+.view-tool-button {
+    cursor: pointer;
+    width: 29px;
+    height: 27px;
+}
+
+.view-shutdown {
+    background-image: url(../img/neutral_cell_bar_close.png);
+}
+
+.view-download {
+    background-image: url(../img/icon-dl.png);
+}
+
+.view-download:hover {
+    background-image: url(../img/icon-dl-hover.png);
+}
+
+.view-snap {
+    display: none;
+    background-image: url(../img/icon-snap.png);
+}
+
+.view-snap:hover {
+    background-image: url(../img/icon-snap-hover.png);
+}
+
+.view-switch-player.h5-player {
+    background-image: url(../img/h_player.png);
+}
+
+.view-switch-player.h5-player:hover {
+    background-image: url(../img/h_player_hover.png);
+}
+
+.view-switch-player.flash-player {
+    background-image: url(../img/f_player.png);
+}
+
+.view-switch-player.flash-player:hover {
+    background-image: url(../img/f_player_hover.png);
+}
+
+.playing .view-snap {
+    display: block;
+}
+
+.view-fill {
+    display: none;
+    background-image: url(../img/icon-exfit.png);
+}
+
+.view-fill:hover {
+    background-image: url(../img/icon-exfit-hover.png);
+}
+
+.view-fill.exfit {
+    display: none;
+    background-image: url(../img/icon-center.png);
+}
+
+.view-fill.exfit:hover {
+    background-image: url(../img/icon-center-hover.png);
+}
+
+.playing .view-fill {
+    display: block;
+}
+
+.view-network-style {
+    cursor: default;
+}
+
+.view-wifi {
+    background-image: url(../img/icon-wlan.png);
+}
+
+.view-lan {
+    background-image: url(../img/icon-lan.png);
+}
+
+.no-channel .view-tool-button, .no-channel .view-toolbar {
+    display: none;
+}
+
+.exit {
+    position: relative;
+    width: 29px;
+    height: 27px;
+    background-image: url(../img/neutral_cell_bar_close.png);
+    float: right;
+    z-index: 999;
+}
+
+
+#download-file-list-box {
+    -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;
+    padding: 0;
+    margin: 0;
+    display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;
+    -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column;
+}
+
+#download-dialog > .bc-dialog {
+    width: 600px;
+    height: auto;
+    min-height: 400px;
+}
+
+.dl-row-name { -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1; min-width: 100px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+.dl-row-begin-time, .dl-row-end-time { min-width: 100px; width: 100px; max-width: 100px; }
+
+.dl-row-file-size { min-width: 80px; width: 80px; max-width: 80px; }
+
+#download-file-list-header > div:nth-child(n+2),
+#download-file-list > div > div:nth-child(n+2)
+{ border-left: 1px solid #ccc; }
+
+#download-file-list > div > div:nth-child(n+3) { text-align: center; }
+
+#download-dialog .bc-dialog-vessel { padding: 8px; display: block; }
+
+#download-file-list-header .dl-row-file-size { margin-right: 16px; }
+
+#download-file-list-box { border: 1px solid #ccc; }
+
+#download-file-list-header { border-bottom: 1px solid #ccc; min-height: 24px; display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex; text-align: center; font-weight: bold !important; }
+
+#download-file-list-header > div { padding: 4px; }
+
+#download-file-list { max-height: 260px; min-height: 260px; -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1; -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column; overflow-y: auto; }
+
+#download-file-list > div { cursor: default; border-bottom: 1px solid #ccc; display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex; }
+
+#download-file-list > div > div { padding: 4px; }
+
+#download-controller { margin-top: 8px; text-align: right; }
+
+#download-controller > input { padding: 4px 8px; min-width: 120px; margin-left: 32px; }
+
+/* Patrol Modifier */
+
+#patrols-list-box {
+    -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;
+    padding: 0;
+    margin: 0;
+    display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;
+    -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column;
+    max-height: 336px;
+}
+
+#patrol-modifier > .bc-dialog {
+    height: 440px;
+    width: 600px;
+}
+
+.patrol-row.selected { background: #60acff; color: white; }
+
+#patrols-list > .patrol-row { cursor: pointer; }
+
+.patrol-row > div { text-align: center; }
+
+.patrol-row-index { width: 4em; }
+
+.patrol-row-preset { -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1; min-width: 100px; }
+
+.patrol-row-time, .patrol-row-speed { -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1; min-width: 100px; }
+
+#modify-patrol-ctrls { height: 40px; min-height: 40px; padding: 8px; text-align: center; }
+
+.patrol-row inpur {
+    max-width: 100%;
+}
+
+#modify-patrol-ctrls input {
+    padding: 8px 16px;
+    min-width: 100px;
+}
+#modify-patrol-ctrls input:nth-child(n+2) {
+    margin-left: 16px;
+}
+
+#patrols-list-header > div:nth-child(n+2),
+#patrols-list > div > div:nth-child(n+2)
+{ border-left: 1px solid #ccc; }
+
+#patrols-list > div > div:nth-child(n+3) { text-align: center; }
+
+#patrol-modifier .bc-dialog-vessel { padding: 8px; }
+
+#patrols-list-box { border: 1px solid #ccc; }
+
+#patrols-list-header { border-bottom: 1px solid #ccc; min-height: 24px; display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex; text-align: center; font-weight: bold !important; }
+
+#patrols-list-header > div { padding: 4px; }
+
+#patrols-list { max-height: 310px; -webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1; -webkit-flex-flow:column;-moz-flex-flow:column;-ms-flex-flow:column;flex-flow:column; overflow-y: auto; }
+
+#patrols-list > div { border-bottom: 1px solid #ccc; display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex; }
+
+#patrols-list > div > div { padding: 4px; }
+
+#modify-patrol-name { padding: 2px; }

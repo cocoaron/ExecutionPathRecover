@@ -1,0 +1,9 @@
+/
+/lib/
+/lib/modules/
+/lib/modules/2.6.15/
+/lib/modules/2.6.15/ar7240gpio.ko
+/lib/modules/2.6.15/ar7240gpiointr.ko
+/etc/
+/etc/modules.d/
+/etc/modules.d/40-ar7240-gpio
