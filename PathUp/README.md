@@ -9,11 +9,21 @@ PathUp is an update path extracting module from (https://github.com/WUSTL-CSPL/C
 
 ## Usage
 1. Setup the testing environment;
-2. Run PathUp using following line:
+    ```
+    sudo apt update
+    sudo apt install python3.6
+
+    sudo apt update
+    sudo apt install openjdk-11-jdk
+
+    sudo apt update
+    sudo apt install npm    
+    ```
+3. Run PathUp using following line:
     ```
     python main.py --firmware_path "$file_path" --results_path "./results"
     ```
-3. Check the output and the result folder for execution path results.
+4. Check the output and the result folder for execution path results.
 
 ## Citation
 @article{wu2024firmware,
