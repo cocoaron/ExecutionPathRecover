@@ -10,6 +10,8 @@ Dependencies are inside PathUp's README
   cd ExecutionPathRecover
   ```
 
+----------------------------------------------------------------------------------------------------------------------
+
 Input Example
   ```
   ($WorkinDirectory)/ExectuionPath/Recover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
