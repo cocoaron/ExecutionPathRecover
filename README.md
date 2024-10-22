@@ -14,7 +14,7 @@ Dependencies are inside PathUp's README
 
 Input Example
   ```
-  ($WorkinDirectory)/ExectuionPath/Recover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
+  ($WorkinDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
   ```
 Output Example
   
