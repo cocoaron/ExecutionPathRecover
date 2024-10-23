@@ -11,11 +11,13 @@ PathUp improves upon ChkUp through enhanced binary entry file search. ChkUp has 
 
 ### How to use PathUp
 
-PathUp can extract program execution paths from a firmware file system. To use PathUp, please refer to README file inside PathUp directory. Dependencies that are required to run the project is also inside PathUp's README file.
+PathUp can extract program execution paths from a firmware file system. It is recommended to run PathUp in Ubuntu 20.04. If following commands fail, please refer to README file inside PathUp directory. Dependencies that are required to run the project are also inside PathUp's README file. 
 
   ```
   git clone https://github.com/cocoaron/ExecutionPathRecover.git
-  cd ExecutionPathRecover
+  cd ./ExecutionPathRecover
+  chmod +x ./run.sh
+  ./run.sh
   ```
 ----------------------------------------------------------------------------------------------------------------------
 
