@@ -1,7 +1,0 @@
-/
-/etc/
-/etc/init.d/
-/etc/init.d/igmpproxy.init
-/sbin/
-/sbin/igmpproxy
-/sbin/cmdigmp

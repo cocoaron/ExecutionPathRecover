@@ -1,7 +1,0 @@
-#!/bin/sh /etc/rc.common
-START=60
-boot() {
-	# Start it by `telnetenable` in Router Debugging Mode.
-	#/usr/sbin/utelnetd -d
-	echo "Start utelnetd by telnetenable"
-}

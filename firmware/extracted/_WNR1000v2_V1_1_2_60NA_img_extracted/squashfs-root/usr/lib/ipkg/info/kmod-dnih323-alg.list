@@ -1,9 +1,0 @@
-/
-/lib/
-/lib/modules/
-/lib/modules/2.6.15/
-/lib/modules/2.6.15/ip_conntrack_dnih323.ko
-/lib/modules/2.6.15/ip_nat_dnih323.ko
-/etc/
-/etc/modules.d/
-/etc/modules.d/20-dnih323-alg

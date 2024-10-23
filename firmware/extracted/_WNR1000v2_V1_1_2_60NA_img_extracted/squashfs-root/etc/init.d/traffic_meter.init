@@ -1,6 +1,0 @@
-#!/bin/sh /etc/rc.common
-START=85
-
-boot() {
-	/sbin/cmd_traffic_meter start
-}

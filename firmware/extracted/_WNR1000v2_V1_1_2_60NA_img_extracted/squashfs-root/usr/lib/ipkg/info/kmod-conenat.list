@@ -1,9 +1,0 @@
-/
-/lib/
-/lib/network/
-/lib/modules/
-/lib/modules/2.6.15/
-/lib/modules/2.6.15/ipt_CONENAT.ko
-/etc/
-/etc/modules.d/
-/etc/modules.d/20-conenat
