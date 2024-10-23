@@ -1,8 +1,8 @@
 #!/bin/bash
 
 CURRENT_DIR=$(pwd)
-SCRIPT_PATH="$CURRENT_DIR/PathUp/pathup_run.sh"
 REQUIREMENTS_FILE="$CURRENT_DIR/PathUp/requirements.txt"
+SCRIPT_PATH="$CURRENT_DIR/pathup_run.sh"
 
 # Update and install dependencies
 echo "Updating system packages..."
@@ -32,11 +32,9 @@ else
 fi
 
 if [ -f "$SCRIPT_PATH" ]; then
-    # Navigate to PathUp and run pathup_run.sh
-    cd "$CURRENT_DIR/PathUp" || { echo "Failed to navigate to $CURRENT_DIR/PathUp"; exit 1; }
     ./pathup_run.sh
 else
-    echo "chkup_run.sh not found in $CURRENT_DIR/PathUp"
+    echo "chkup_run.sh not found in $CURRENT_DIR"
     exit 1
 fi
 
