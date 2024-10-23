@@ -22,9 +22,9 @@ PathUp is an update path extracting module from (https://github.com/WUSTL-CSPL/C
 3. Run PathUp using following line:
     ```
     python main.py --firmware_path "$file_path" --results_path "./results"
+    # example : python main.py --firmware_path="($WorkingDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted" --results_path="./results"
     ```
-
-
+   
 ### Citation
 @article{wu2024firmware,
   title={Your Firmware Has Arrived: A Study of Firmware Update Vulnerabilities},
