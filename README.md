@@ -13,7 +13,7 @@ PathUp improves upon ChkUp through enhanced binary entry file search. ChkUp has 
 
 PathUp can extract program execution paths from a firmware file system. It is recommended to run PathUp in Ubuntu 20.04. If following commands fail, please refer to README file inside PathUp directory. Dependencies that are required to run the project are also inside PathUp's README file. The project will require enough disk space about 15GB. Following permissions are required to run the program.
 
-Given script will install all dependencies required for the project. The dependencies will ask for sudo permissions. After installing all requirements. It will run update path extrator modules 3 times for each different firmwares. 
+Given script will install all dependencies required for the project. The dependencies will ask for sudo permissions. After installing all requirements. It will run update path extrator modules 3 times for each different firmware. 
 
 #### Available Firmwares
 
