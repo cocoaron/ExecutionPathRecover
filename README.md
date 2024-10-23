@@ -4,6 +4,8 @@ ExecutionPathRecover is a firmware update path extracting module. It is derived 
 
 ### PathUp fixes 
 
+PathUp improves upon ChkUp through enhanced binary entry file search. ChkUp has bias on web entry files over other file format. (e.g. shell, binary, etc.) However, current implementation of ChkUp shows that due to its bias, it incorrectly implemented entry file search for binary files. When parsing through firmware with no web entry files, ChkUp creates multiple errors such as following logs. Moreover, binary entry file search 
+
 ![image](https://github.com/user-attachments/assets/4a366f07-6a83-4493-8f27-ed9e3b715c5e)
 
 
