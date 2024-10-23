@@ -7,7 +7,7 @@ ExecutionPathRecover is a firmware update path extracting module. It is derived 
 PathUp improves upon ChkUp through enhanced binary entry file search. ChkUp has bias on web entry files over other file format. (e.g. shell, binary, etc.) However, current implementation of ChkUp shows that due to its bias, it incorrectly implemented entry file search for binary files. When parsing through firmware with no web entry files, ChkUp creates multiple errors such as following logs. Moreover, binary entry file search simply relied on ASCII strings that can be found through the compile binaries. This limited the context of binary search as it loses important information such as functions and parameters. Ghidra was used to correctly parse through binary files and find correct path. Detailed information can be found in the paper.
 
 ![image](https://github.com/user-attachments/assets/4a366f07-6a83-4493-8f27-ed9e3b715c5e)
-![image](https://github.com/user-attachments/assets/a582c782-fe27-4871-b0b1-1a39151ae917)
+![image](https://github.com/user-attachments/assets/1248aa4f-efbe-4a8f-b414-611f7c1d0ac4)
 
 ### How to use PathUp
 
