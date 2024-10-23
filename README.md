@@ -23,13 +23,12 @@ chmod +x ./ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/support/analyzeHea
 ./run.sh
 ```
 
-Given script will install all dependencies required for the project. The dependencies will ask for sudo permissions. After installing all requirements, script will run update path extrator modules 3 times for each different firmware. 
+Given script will install all dependencies required for the project. The dependencies will ask for sudo permissions. After installing all requirements, script will run update path extrator module.
 
 #### Available Firmwares
 
 All available firmwares in the projects are located in /firmware/extracted directory.
 * TP-Link: WA801N(in script), WR940N
-* Netgear: WNR1000(in script), WPN824EXT
 * Reolink: RLC-410W(in script)
 
 ----------------------------------------------------------------------------------------------------------------------
