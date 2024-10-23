@@ -42,8 +42,21 @@ file_paths=(
 WORKING_DIR="$CURRENT_DIR"
 cd "$WORKING_DIR" || { echo "Failed to navigate to $WORKING_DIR"; exit 1; }
 
+# Define results directory
+RESULTS_DIR="$CURRENT_DIR/results"
+
+# Check if results directory exists and remove its contents
+if [ -d "$RESULTS_DIR" ]; then
+    echo "Removing old result files from $RESULTS_DIR..."
+    rm -rf "$RESULTS_DIR"/*
+else
+    echo "Results directory not found. Creating $RESULTS_DIR..."
+    mkdir -p "$RESULTS_DIR"
+fi
+
+# Loop through firmware paths and run main.py for each
 for file_path in "${file_paths[@]}"
 do
-    echo "Running PathUp" with "$file_path"
-    python3 main.py --firmware_path "$file_path" --results_path "$CURRENT_DIR/results"
+    echo "Running PathUp with firmware at $file_path"
+    python3 main.py --firmware_path "$file_path" --results_path "$RESULTS_DIR"
 done
