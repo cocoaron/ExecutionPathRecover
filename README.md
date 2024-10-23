@@ -22,15 +22,15 @@ All available firmwares in the projects are located in /firmware/extracted direc
 * Netgear: WNR1000(in script), WPN824EXT
 * Reolink: RLC-410W(in script)
 
-  ```
-  git clone https://github.com/cocoaron/ExecutionPathRecover.git
-  cd ./ExecutionPathRecover
-  chmod +x ./run.sh
-  chmod +x ./PathUp/pathup_run.sh
-  chmod +x ./ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/support/launch.sh
-  chmod +x ./ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/support/analyzeHeadless
-  ./run.sh
-  ```
+```
+git clone https://github.com/cocoaron/ExecutionPathRecover.git
+cd ./ExecutionPathRecover
+chmod +x ./run.sh
+chmod +x ./PathUp/pathup_run.sh
+chmod +x ./ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/support/launch.sh
+chmod +x ./ghidra_10.1.2_PUBLIC_20220125/ghidra_10.1.2_PUBLIC/support/analyzeHeadless
+./run.sh
+```
 ----------------------------------------------------------------------------------------------------------------------
 
 ### Input Example
