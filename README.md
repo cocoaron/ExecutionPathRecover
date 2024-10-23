@@ -21,7 +21,7 @@ PathUp can extract program execution paths from a firmware file system. To use P
 
 ### Input Example
   ```
-  ($WorkinDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
+  ($WorkingDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
   ```
 ### Output Example
 #### ufg-SoftwareUpgradeRpm.pkl  
