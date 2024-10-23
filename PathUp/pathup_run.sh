@@ -11,7 +11,6 @@ else
     echo "PathUp directory found in $CURRENT_DIR."
 fi
 
-
 # Define an array of testing firmware paths
 file_paths=(
     "$CURRENT_DIR/../firmware/extracted/RLC-410W_extracted"
