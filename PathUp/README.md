@@ -24,7 +24,7 @@ PathUp is an update path extracting module from (https://github.com/WUSTL-CSPL/C
     python main.py --firmware_path "$file_path" --results_path "./results"
     # example : python main.py --firmware_path="($WorkingDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted" --results_path="./results"
     ```
-    For each reruns, it is recommended to emprt results directory as previous results will collide with current program and may produce program aborts.
+    For each reruns, it is recommended to empty ./results directory as previous results will collide with current program and may produce program aborts.
    
 ### Citation
 @article{wu2024firmware,
