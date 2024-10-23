@@ -1,9 +1,7 @@
 #!/bin/bash 
 
-# Get the current working directory
 CURRENT_DIR=$(pwd)
 
-# Check if PathUp exists in the current directory
 if [[ "$CURRENT_DIR" != *"/PathUp"* ]]; then
     echo "PathUp directory not found in $CURRENT_DIR. Prepending PathUp..."
     CURRENT_DIR="$CURRENT_DIR/PathUp"
@@ -19,7 +17,6 @@ is_npm_script_running() {
 SCRIPT_NAME="start"
 SCRIPT_PATH="$CURRENT_DIR/exec_pth_rec/jsparse"
 
-# Navigate to the JS parser path
 cd "$SCRIPT_PATH" || { echo "Failed to navigate to $SCRIPT_PATH"; exit 1; }
 
 # Check if the JavaScript parser is already running
@@ -31,18 +28,16 @@ else
     disown
 fi
 
-# Define an array of testing firmware paths
+# The script runs 3 firmwares consisting of Reolink RLC-410W, TP-Link WA801N, and Netgear WNR1000
 file_paths=(
     "$CURRENT_DIR/../firmware/extracted/RLC-410W_extracted"
     "$CURRENT_DIR/../firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted"
     "$CURRENT_DIR/../firmware/extracted/_WNR1000v2_V1_1_2_60NA_img_extracted"
 )
 
-# Loop through the array of file paths
 WORKING_DIR="$CURRENT_DIR"
 cd "$WORKING_DIR" || { echo "Failed to navigate to $WORKING_DIR"; exit 1; }
 
-# Define results directory
 RESULTS_DIR="$CURRENT_DIR/results"
 
 # Check if results directory exists and remove its contents
@@ -54,7 +49,6 @@ else
     mkdir -p "$RESULTS_DIR"
 fi
 
-# Loop through firmware paths and run main.py for each
 for file_path in "${file_paths[@]}"
 do
     echo "Running PathUp with firmware at $file_path"
