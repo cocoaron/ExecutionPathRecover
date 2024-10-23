@@ -1,6 +1,6 @@
 # ExecutionPathRecover
 
-ExecutionPathRecover is a firmware update path extracting module. It is derived from ChkUp(https://github.com/WUSTL-CSPL/ChkUp). The project contains Ghidra v10.1.2, PathUp, and firmwares. The firmware directory includes both firmware image and file system that are extracted using Binwalk. Ghidra is utilized by PathUp to parse binary data.
+ExecutionPathRecover is a firmware update path extracting module. It is derived from ChkUp(https://github.com/WUSTL-CSPL/ChkUp). The project contains Ghidra v10.1.2, PathUp, and firmwares. The firmware directory includes firmware file system that is extracted using Binwalk. Ghidra is utilized by PathUp to parse binary data.
 
 ### PathUp fixes 
 
@@ -21,7 +21,7 @@ PathUp can extract program execution paths from a firmware file system. To use P
 
 ### Input Example
   ```
-  ($WorkingDirectory)/ExectuionPathRecover/firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted
+  wa801nv1_en_3_12_6_up_bin_extracted (file system directory)
   ```
 ### Output Example
 #### ufg-SoftwareUpgradeRpm.pkl  
