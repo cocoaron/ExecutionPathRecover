@@ -11,6 +11,26 @@ else
     echo "PathUp directory found in $CURRENT_DIR."
 fi
 
+# Initialize the JavaScript parser
+is_npm_script_running() {
+    pgrep -fl "node.*$1" > /dev/null
+}
+
+SCRIPT_NAME="start"
+SCRIPT_PATH="$CURRENT_DIR/exec_pth_rec/jsparse"
+
+# Navigate to the JS parser path
+cd "$SCRIPT_PATH" || { echo "Failed to navigate to $SCRIPT_PATH"; exit 1; }
+
+# Check if the JavaScript parser is already running
+if is_npm_script_running "$SCRIPT_NAME"; then
+    echo "JS parser is already running."
+else
+    echo "JS parser is not running. Starting the script..."
+    npm run "$SCRIPT_NAME" > /dev/null 2>&1 &
+    disown
+fi
+
 # Define an array of testing firmware paths
 file_paths=(
     "$CURRENT_DIR/../firmware/extracted/RLC-410W_extracted"
