@@ -32,9 +32,9 @@ else
 fi
 
 if [ -f "$SCRIPT_PATH" ]; then
-    ./pathup_run.sh
+    $SCRIPT_PATH
 else
-    echo "chkup_run.sh not found in $CURRENT_DIR"
+    echo "chkup_run.sh not found in $CURRENT_DIR/PathUp"
     exit 1
 fi
 
