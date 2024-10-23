@@ -32,7 +32,6 @@ fi
 file_paths=(
     "$CURRENT_DIR/../firmware/extracted/RLC-410W_extracted"
     "$CURRENT_DIR/../firmware/extracted/wa801nv1_en_3_12_6_up_bin_extracted"
-    "$CURRENT_DIR/../firmware/extracted/_WNR1000v2_V1_1_2_60NA_img_extracted"
 )
 
 WORKING_DIR="$CURRENT_DIR"
